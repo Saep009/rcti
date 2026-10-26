@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RCTI AUTO - Saep009</title>
+</head>
+<body>
+<h2>RCTI Auto Update - Anti Error 1027</h2>
+<p id="status">Loading...</p>
+<pre id="link"></pre>
+<script>
+fetch('https://proud-cell-5867.saepudin-25cf.workers.dev/?id=rcti')
+.then(r=>r.text()).then(t=>{
+ document.getElementById('link').innerText=t;
+ document.getElementById('status').innerText='SUKSES';
+})
+</script>
+</body>
+</html>
